@@ -32,7 +32,7 @@ public class Main {
         highScorePosition = calculateHighScore(500);
         displayHighScorePosition("Carol", highScorePosition);
 
-        highScorePosition = calculateHighScore(100);
+        highScorePosition = calculateHighScore(100  );
         displayHighScorePosition("Louise", highScorePosition);
 
     }
@@ -44,16 +44,15 @@ public class Main {
     public static int calculateHighScore (int playerScore) {
         if (playerScore >= 1000) {
             return 1;
-        } else if (playerScore >= 500 && playerScore < 1000) {
+        } else if (playerScore >= 500) {
             return 2;
-        } else if (playerScore >= 100 && playerScore < 500) {
+        } else if (playerScore >= 100) {
             return 3;
         } else {
             return 4;
         }
     }
-
-
+    
     public static int calculateScore(boolean gameOver, int score, int levelCompleted, int bonus) {
         if (gameOver) {
             int finalScore = score + (levelCompleted * bonus);
