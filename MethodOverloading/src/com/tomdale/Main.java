@@ -55,4 +55,9 @@ public class Main {
         System.out.println(inches + " inches is equal to " + feet + " feet and "  + remainingInches + " inches");
         return calcFeetAndInchesToCentimeters(feet, remainingInches);
     }
+
+    //Method overloading is a feature that allows us to have more than one method with the same name, so long as we use different parameters.
+    //It is the ability to create multiple methods of the same name with different implementations
+    //Calls to overload method will run a specific implementation of that method.
+    //In the example from the previous video we had calculateScore method with 0, 1 and 2 parameters
 }
