@@ -6,7 +6,7 @@ public class LeapYearCalculator {
                 return year % 100 != 0 || year % 400 == 0;
             }
         }
-        
+
         return false;
     }
 }
